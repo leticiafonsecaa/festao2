@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'DM Sans', sans-serif;
+    color: #292524;
+    background: #fffaf7;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .section-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .btn-primary {
+    border-radius: 0.75rem;
+    background-color: #c47d6b;
+    padding: 0.75rem 1.25rem;
+    color: white;
+    transition: background-color 150ms ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #a96051;
+  }
+}
